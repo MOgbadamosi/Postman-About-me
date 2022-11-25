@@ -1,0 +1,484 @@
+{
+	"id": "0cd725a5-89de-41de-a08b-8bedcbb7ace9",
+	"name": "APICollection_Module_3_Auto_Testing",
+	"timestamp": "2022-11-25T01:16:38.586Z",
+	"collection_id": "24221269-cbd396c5-efba-48a6-a620-0aeb588d91ab",
+	"folder_id": 0,
+	"environment_id": "24221269-4b5fb9fd-ee62-48b9-a714-40a6e8ba69e7",
+	"totalPass": 36,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "47f9f11e-194a-4a0d-a9ec-b73ccfae1aa1",
+			"name": "Get All Todo Entries",
+			"url": "https://demo.fusio-project.org/index.php/todo",
+			"time": 179,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code should be 404": true,
+				"Status code should have name string": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have name string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				179
+			],
+			"allTests": [
+				{
+					"Status code should be 404": true,
+					"Status code should have name string": true
+				}
+			]
+		},
+		{
+			"id": "1cec2921-aa1b-42e9-92b1-43bd5094bcca",
+			"name": "Get Books",
+			"url": "https://simple-books-api.glitch.me/books",
+			"time": 1092,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1092
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string OK": true
+				}
+			]
+		},
+		{
+			"id": "cabf8d4d-3e28-435d-bc72-e95fa115c691",
+			"name": "Get All Entries",
+			"url": "https://demo.fusio-project.org/index.php/?&rel=root",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code should be 200": true,
+				"Status code name should have string": true,
+				"Confirm that title should be Fusio": true,
+				"Confirm that apiVersion should be 6.3.8.0": true,
+				"Body matches string": true,
+				"Confirm that entry with links contains route": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name should have string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that title should be Fusio": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that apiVersion should be 6.3.8.0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that entry with links contains route": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Status code name should have string": true,
+					"Confirm that title should be Fusio": true,
+					"Confirm that apiVersion should be 6.3.8.0": true,
+					"Body matches string": true,
+					"Confirm that entry with links contains route": true
+				}
+			]
+		},
+		{
+			"id": "1c0b1638-70e0-437a-886a-079060f14b14",
+			"name": "Get entry per ID",
+			"url": "https://demo.fusio-project.org/index.php/todo/",
+			"time": 60,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code should be 404": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Status code should be 404": true
+				}
+			]
+		},
+		{
+			"id": "c2faac9d-58aa-4484-8a40-3a8354987080",
+			"name": "Place a book order",
+			"url": "https://simple-books-api.glitch.me/orders",
+			"time": 409,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code should be 200": true,
+				"Status code should have a name string": true,
+				"Confirm that entry displays order id": true,
+				"Confirm that order has been placed": true,
+				"Confirm that entry verifies order creation with true or false": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have a name string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that entry displays order id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that order has been placed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that entry verifies order creation with true or false": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				409
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Status code should have a name string": true,
+					"Confirm that entry displays order id": true,
+					"Confirm that order has been placed": true,
+					"Confirm that entry verifies order creation with true or false": true
+				}
+			]
+		},
+		{
+			"id": "e3983e6c-db59-4f47-b443-fa967ae86fe7",
+			"name": "Place a book order 2",
+			"url": "https://simple-books-api.glitch.me/orders",
+			"time": 427,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code should be 200": true,
+				"Status code should have a name string": true,
+				"Confirm that entry displays order id": true,
+				"Confirm that order has been placed": true,
+				"Confirm that entry verifies order creation with true or false": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have a name string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that entry displays order id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that order has been placed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that entry verifies order creation with true or false": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				427
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Status code should have a name string": true,
+					"Confirm that entry displays order id": true,
+					"Confirm that order has been placed": true,
+					"Confirm that entry verifies order creation with true or false": true
+				}
+			]
+		},
+		{
+			"id": "28a44d96-596f-4106-a068-aa49c1f72df6",
+			"name": "Place a book order 3",
+			"url": "https://simple-books-api.glitch.me/orders",
+			"time": 436,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code should be 200": true,
+				"Status code should have a name string": true,
+				"Confirm that entry displays order id": true,
+				"Confirm that order has been placed": true,
+				"Confirm that entry verifies order creation with true or false": true
+			},
+			"testPassFailCounts": {
+				"Status code should be 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have a name string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that entry displays order id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that order has been placed": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that entry verifies order creation with true or false": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				436
+			],
+			"allTests": [
+				{
+					"Status code should be 200": true,
+					"Status code should have a name string": true,
+					"Confirm that entry displays order id": true,
+					"Confirm that order has been placed": true,
+					"Confirm that entry verifies order creation with true or false": true
+				}
+			]
+		},
+		{
+			"id": "164a635a-c511-4029-ba02-ffb7aad27cda",
+			"name": "Get all orders",
+			"url": "https://simple-books-api.glitch.me/orders",
+			"time": 154,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"Confirm customer order placed successfully": true,
+				"Confirm that entry with id b5d7GAX2bs64KhXacypFN is displayed": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm customer order placed successfully": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that entry with id b5d7GAX2bs64KhXacypFN is displayed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				154
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"Confirm customer order placed successfully": true,
+					"Confirm that entry with id b5d7GAX2bs64KhXacypFN is displayed": true
+				}
+			]
+		},
+		{
+			"id": "e4021697-e5bc-43a1-af22-af7ee006241e",
+			"name": "Get an order",
+			"url": "https://simple-books-api.glitch.me/orders/ZhzjoMt6SBJSehBQ8Qc7U",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true,
+				"Status code name should have a string": true,
+				"Confirm that entry with id ZhzjoMt6SBJSehBQ8Qc7U is displayed": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name should have a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm that entry with id ZhzjoMt6SBJSehBQ8Qc7U is displayed": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true,
+					"Status code name should have a string": true,
+					"Confirm that entry with id ZhzjoMt6SBJSehBQ8Qc7U is displayed": true
+				}
+			]
+		},
+		{
+			"id": "9ef77ea6-4580-4a90-b7fe-0821d7218506",
+			"name": "Delete an order",
+			"url": "https://simple-books-api.glitch.me/orders/LCD53YO5Bck7Q4PPR7RYt?orderId=",
+			"time": 316,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Status code name has string Not Found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string Not Found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				316
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Status code name has string Not Found": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3311,
+	"collection": {
+		"requests": [
+			{
+				"id": "47f9f11e-194a-4a0d-a9ec-b73ccfae1aa1",
+				"method": "GET"
+			},
+			{
+				"id": "1cec2921-aa1b-42e9-92b1-43bd5094bcca",
+				"method": "GET"
+			},
+			{
+				"id": "cabf8d4d-3e28-435d-bc72-e95fa115c691",
+				"method": "GET"
+			},
+			{
+				"id": "1c0b1638-70e0-437a-886a-079060f14b14",
+				"method": "GET"
+			},
+			{
+				"id": "c2faac9d-58aa-4484-8a40-3a8354987080",
+				"method": "POST"
+			},
+			{
+				"id": "e3983e6c-db59-4f47-b443-fa967ae86fe7",
+				"method": "POST"
+			},
+			{
+				"id": "28a44d96-596f-4106-a068-aa49c1f72df6",
+				"method": "POST"
+			},
+			{
+				"id": "164a635a-c511-4029-ba02-ffb7aad27cda",
+				"method": "GET"
+			},
+			{
+				"id": "e4021697-e5bc-43a1-af22-af7ee006241e",
+				"method": "GET"
+			},
+			{
+				"id": "9ef77ea6-4580-4a90-b7fe-0821d7218506",
+				"method": "DELETE"
+			}
+		]
+	}
+}
